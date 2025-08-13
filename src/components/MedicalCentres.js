@@ -201,10 +201,11 @@ const MedicalCentres = () => {
           }}
         ></div>
         <div className="search-bar-city-state">
-          <div className="search-state" id="state">
+          <div className="search-state" >
             <CiLocationOn className="locationIcon" />
             <select
               name="state"
+              id="state"
               value={selectedState || "State"}
               onChange={(e) => {
                 setSelectedState(e.target.value);
@@ -222,10 +223,11 @@ const MedicalCentres = () => {
               ))}
             </select>
           </div>
-          <div className="search-city" id="city">
+          <div className="search-city" >
             <CiLocationOn className="locationIcon" />
             <select
               name="city"
+              id="city"
               value={selectedCity || "City"}
               onChange={(e) => {
                 setSelectedCity(e.target.value);
