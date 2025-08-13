@@ -1,0 +1,1492 @@
+.App {
+  font-family: sans-serif;
+  background: linear-gradient(
+    81deg,
+    #eff5fe 9.01%,
+    rgba(241, 247, 255, 0.47) 89.11%
+  );
+  font-family: "Poppins", sans-serif;
+}
+.banner {
+  background-color: #2aa7ff;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: #fff;
+
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 5vw;
+  border-radius: 5px;
+  gap: 10px;
+}
+.navbar-brand span {
+  color: #2aa7ff;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.home-btns {
+  background-color: #2aa7ff;
+  color: #fff;
+}
+.home-btns:hover {
+  background-color: white;
+  color: #2aa7ff;
+  border: 1px solid #2aa7ff;
+}
+.home-btns:active {
+  border: 1px solid #2aa7ff !important;
+  color: #2aa7ff !important;
+  border-radius: 5px;
+}
+#navbarNav {
+  margin-right: 5vw;
+}
+#navbarNav ul {
+  display: contents;
+}
+.active-link {
+  color: #2aa7ff !important;
+  border-bottom: 3px solid #2aa7ff;
+  padding-bottom: 15px;
+  border-radius: 0px;
+}
+.active-button {
+  color: #2aa7ff;
+  background-color: #fff;
+  border-bottom: 3px solid #2aa7ff;
+  padding-bottom: 15px;
+  border-radius: 0px;
+}
+.nav-link {
+  color: black;
+}
+.nav-tem .myBookings:active {
+  border: 3px solid #2aa7ff;
+  padding-bottom: 10px;
+}
+.search-div {
+  display: flex !important;
+  justify-content: flex-end;
+  gap: 1rem;
+  border-radius: 10px;
+  margin-bottom: 5vh;
+  flex-wrap: wrap;
+}
+.hero-cards {
+  display: flex;
+  flex-direction: column;
+}
+.hero-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5vw;
+  background-color: transparent; /* or set a real value */
+  align-items: center;
+  position: relative;
+  top: 10vh;
+}
+.hero-div-text p:first-of-type {
+  font-size: 31px;
+  font-weight: 500;
+}
+.hero-div-text p:nth-of-type(2) {
+  font-size: 56px;
+  font-weight: 700;
+}
+.hero-div-img img {
+  overflow: hidden;
+  height: auto;
+}
+input {
+  background-color: inherit;
+  border: none;
+}
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background: #fafbfe;
+  text-align: center;
+  padding: 10px;
+
+  border-radius: 5px;
+  border: 1px solid #f0f0f0;
+}
+.search-button {
+  padding: 0px;
+}
+.search-button button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+input:focus {
+  outline: none;
+}
+.quickAccessCards-search {
+  margin: 0 5vw;
+  padding: 5vw;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+  box-shadow: 1px 1px 1px grey;
+}
+.quickAccessCards {
+  display: flex;
+  flex-direction: column;
+
+  flex-grow: 1;
+  text-align: center;
+}
+.quickAccessCards p {
+  font-weight: 500;
+}
+.accessCards {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cards {
+  flex: 1 1 10%;
+
+  max-width: 250px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fafbfe;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards p {
+  color: #abb6c7;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.quickAccessCardIcons {
+  color: #2aa7ff;
+  font-size: xx-large;
+}
+.search-icon {
+  margin-right: 3px;
+}
+.slider {
+  background-color: white;
+  padding: 0 4vw;
+  position: relative;
+  bottom: 10vh;
+  padding: 20vh 20vh 10vh 20vh;
+}
+.slides {
+  display: flex;
+
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 5vh;
+}
+.slide-img {
+  display: flex;
+}
+.slide-img.active {
+  display: flex;
+}
+.slide-img.active img {
+  box-shadow: 2px 2px 2px grey;
+}
+.slide-img img {
+  width: 25vw;
+  border-radius: 20px;
+}
+.slide-img img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.slider-dots *:hover {
+  cursor: pointer;
+}
+.dot.active {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #2aa7ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-dot.active {
+  background-color: #2aa7ff;
+}
+.inner-dot {
+  width: 10px;
+  height: 10px;
+  background-color: grey;
+  border-radius: 50%;
+}
+.specialization-container {
+  background-color: linear-gradient(
+    81deg,
+    #e7f0ff 9.01%,
+    rgba(232, 241, 255, 0.47) 89.11%
+  );
+  text-align: center;
+  padding: 0 5vw 5vh;
+}
+h2 {
+  font-weight: 600;
+  color: #1b3c74;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.specialization-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.row-1,
+.row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.specializationIcons {
+  color: #2aa7ff;
+  font-size: xx-large;
+}
+.specialization-cards {
+  background-color: white;
+  border-radius: 5px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 18%;
+}
+.specialization-cards p {
+  color: #abb6c7;
+}
+.viewAllButton {
+  width: 100px;
+  align-self: center;
+  padding: 10px;
+}
+.medicalspecialist-container {
+  text-align: center;
+  padding: 30px 0px;
+}
+.listOfDoctors {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+}
+.doctorDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.doctorImage {
+  overflow: hidden;
+  padding: 20px 20px 0px;
+  border-radius: 50% 50% 0 0;
+  background: linear-gradient(144.2deg, #e1f3ff 0%, #2aa7ff 100%);
+}
+.doctorDetails img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.doctorName {
+  color: #1b3c74;
+  font-weight: 500;
+  font-size: 24px;
+}
+.doctorDiscipline {
+  font-size: 16px;
+  color: #2aa7ff;
+}
+.sliderWrapper {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+.slideBtns {
+  position: absolute;
+  top: 40%;
+
+  transform: translateY(-50%);
+  font-size: 40px;
+  filter: opacity(0.5);
+  color: grey;
+  z-index: 1;
+}
+.slideBtns:disabled {
+  border: none;
+}
+.slideBtns:focus {
+  outline: none;
+  border: none;
+}
+.prevBtn {
+  left: 0;
+}
+
+.nextBtn {
+  right: 0;
+}
+.patientCaring-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 10vh 0;
+}
+.patientCaringImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 50%;
+}
+.patientCaringImageDiv {
+  display: flex;
+}
+
+.patientCaringImageDiv img {
+  width: 350px;
+  height: 270px;
+  border: 5px solid #fff;
+}
+
+.patientCaringImage_2 {
+  position: relative;
+  right: 150px;
+  bottom: 100px;
+  z-index: 1;
+}
+.patientCaringText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.patientCaringText p {
+  color: #2aa7ff;
+  font-weight: 600;
+}
+.patientCaringText span {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #77829d;
+}
+ul {
+  padding: 0;
+  margin-top: 20px;
+}
+li span {
+  font-family: "Roboto", Times, serif !important;
+  margin-left: 10px;
+}
+li {
+  list-style: none;
+}
+.latestNews-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 5vw;
+}
+.latestNewsCards-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.latestNews-cards {
+  border: 1px solid #00000012;
+  border-radius: 5px;
+  flex: 1 1 33%;
+  max-width: 300px;
+}
+.latestNewsTextContent {
+  text-align: left;
+  padding: 10px;
+  align-items: flex-start;
+}
+.latestNewsTextContent p {
+  color: #77829d;
+  font-family: "Inter", "sans-serif";
+}
+.latestNewsTextContent span {
+  color: #1b3c74;
+  font-weight: 500;
+}
+.latestNews-cards img {
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+  width: 300px;
+  height: 200px;
+}
+.latestNewsCardAuthor {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.latestNewsCardAuthor img {
+  object-fit: cover;
+  max-width: 20px;
+  height: auto;
+}
+.cards-slider {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.slider-buttons {
+  display: flex;
+
+  position: relative;
+  top: 100px;
+
+  z-index: 1;
+}
+.prevButton {
+  position: absolute;
+  left: -20px;
+}
+.nextButton {
+  position: absolute;
+
+  right: -20px;
+}
+.prevButton:disabled,
+.prevButton:focus,
+.nextButton:focus,
+.nextButton:disabled {
+  border: none;
+}
+.AppPromotion-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  overflow: hidden;
+}
+
+.AppPromotionImages {
+  position: relative;
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.AppPromotionImages .imageGroup {
+  position: relative;
+  width: fit-content;
+  margin-left: -60px;
+}
+.imageGroup:first-child {
+  top: 100px;
+}
+.imageGroup:first-child .mobileScreen {
+  z-index: 1;
+}
+.imageGroup:first-child .mobileCover {
+  z-index: 2;
+}
+.mobileScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.mobileCover {
+  position: relative;
+
+  width: 100%;
+}
+.AppPromotionText {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+.AppPromotionText p {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+.blueCurvedArrow {
+  position: relative;
+  top: 200px;
+  right: 70px;
+}
+.phoneNumber-SMS {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.phoneNumber {
+  display: flex;
+  align-items: center;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  background-color: white;
+  width: 30vw;
+}
+.phoneNumber span {
+  border-right: 1px solid #b4b4be4d;
+  padding: 10px;
+}
+.phoneNumber input {
+  padding: 10px;
+  font-size: 12px;
+}
+.appStore {
+  display: flex;
+  gap: 20px;
+}
+.appStore img {
+  width: 200px;
+}
+.appStore button {
+  border: none;
+}
+.community-container {
+  display: flex;
+  justify-content: center;
+  padding: 5vw;
+  gap: 50px;
+}
+.community-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.community-text p {
+  color: #2aa7ff;
+  font-weight: 600;
+}
+.community-text span {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  line-height: 240%;
+}
+.community-stats {
+  width: 50%;
+  display: flex;
+  gap: 30px;
+}
+.community-stats-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.community-stats-card-container:nth-child(2) {
+  position: relative;
+  top: 40px;
+}
+.community-stats-card {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 0px 15px 45px -5px #00000012;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.community-stats-card span {
+  color: #77829d;
+  font-weight: 500;
+}
+
+.community-stats-card .icon {
+  width: 100px;
+  height: 100px;
+  padding: 25px;
+  border-radius: 50%;
+  overflow: visible;
+}
+.FAQ-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.FAQImage,
+.FAQText {
+  display: flex;
+  width: 50%;
+}
+.FAQImage {
+  justify-content: flex-end;
+}
+.FAQImage img {
+  max-height: 400px;
+  width: auto;
+  object-fit: cover;
+}
+.FAQText {
+  justify-content: flex-start;
+  align-items: center;
+}
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.accordion-item {
+  border-radius: 10px;
+  width: 40vw;
+}
+
+.accordion-header {
+  color: #1b3c74;
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+.accordion-header * {
+  margin: 0 20px;
+}
+.accordion-body {
+  font-size: 16px;
+
+  text-align: left;
+  line-height: 200%;
+}
+.accordion-body.open {
+  /* Set based on your expected max content height */
+  padding: 1rem;
+}
+.accordion-icon {
+  color: #2aa7ff;
+  font-size: xx-large;
+}
+.accordion-icon:hover {
+  cursor: pointer;
+}
+.footer-container {
+  background-color: #1b3c74;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 5vw;
+  color: #fff;
+}
+.footer-container p {
+  border-top: 1px solid #ffffff1a;
+  padding-top: 30px;
+}
+.medifyIcon {
+  color: #2aa7ff;
+  background-color: #fff;
+}
+.boxes-container {
+  display: flex;
+  gap: 30px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 20%;
+}
+.box1 {
+  justify-content: space-between;
+  flex: 1 1 30%;
+}
+.medify {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 600;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.social-icons {
+  font-size: 30px;
+  padding: 7px;
+  background-color: #fff;
+  color: #2aa7ff;
+  border-radius: 50%;
+  overflow: visible;
+}
+.footer-links {
+  display: flex;
+  gap: 10px;
+}
+.medicalCentres-container {
+  z-index: 0;
+  background: linear-gradient(
+    81deg,
+    #eff5fe 9.01%,
+    rgba(241, 247, 255, 0.47) 89.11%
+  );
+  min-height: 100vh;
+}
+.medicalCentres-container.dull {
+  z-index: 0;
+  filter: opacity(0.2);
+}
+.search-bar-city-state {
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 50px;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 3vw;
+  border-radius: 10px;
+}
+.search-state,
+.search-city {
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+  flex: 1 1 25%;
+  align-items: center;
+  background-color: #fafbfe;
+
+  border: 1px solid #f0f0f0;
+}
+.search-state select,
+.search-city select {
+  background-color: inherit;
+  width: 90%;
+  border: none;
+}
+.locationIcon {
+  font-size: 20px;
+}
+.hospitalNumbers-hospitals-ad {
+  width: 80vw;
+  margin: 20px auto 0 auto;
+  padding-bottom: 20px;
+}
+.hospitalNumbers-hospitals-ad .checkIcon {
+  font-size: 25px;
+}
+.hospitals-ad {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
+.hospitals-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 50vw;
+  gap: 20px;
+}
+
+.ad img {
+  object-fit: cover;
+  width: 28vw;
+  height: 40vh;
+  object-position: left;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid #2aa7ff;
+}
+.hospitalCentre-details,
+.bookedHospital-details {
+  display: flex;
+
+  gap: 20px;
+}
+.hospitalDetails-slotBooking,
+.bookedHospital {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+}
+.hospitalDetails-Image,
+.bookedHospital-Image {
+  height: 40%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #8ccfff;
+  padding: 10px;
+}
+.hospitalDetails-Image img,
+.bookedHospital-Image img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+}
+.hospitalDetails-Text,
+.bookedHospital-Text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.hospitalDetails-Text h3,
+.bookedHospital-Text h1 {
+  color: #2aa7ff;
+  font-size: larger;
+  font-weight: 600;
+}
+.hospitalDetails-Text .state-city,
+.bookedHospital-Text .state-city {
+  font-weight: 700;
+  color: #414146;
+}
+.hospitalDetails-Text .rating,
+.bookedHospital-Text .rating {
+  display: flex;
+  gap: 10px;
+}
+.hospitalBooking {
+  display: flex;
+  align-items: end;
+}
+.date-slider-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1rem;
+}
+.date-slider-wrapper {
+  flex: 1;
+  overflow: hidden;
+  padding: 10px 0;
+}
+.date-slider {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  gap: 20px;
+}
+.date-slider-btn {
+  color: #2aa7ff;
+}
+.date-slider-btn:disabled {
+  color: grey;
+
+  border: none;
+}
+.date-slider-btn:active,
+.date-slider-btn:focus,
+.date-slider-btn:hover {
+  border: none;
+  color: #1b3c74;
+}
+.date-details {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  border-radius: 6px;
+  width: 165px;
+  flex-shrink: 0;
+}
+.date-details p {
+  margin: 0;
+}
+.date-details.active {
+  border-bottom: 1px solid #2aa7ff;
+  color: #2aa7ff;
+}
+.slots-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+.slot-section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.slot-times {
+  display: flex;
+  gap: 20px;
+}
+.slot {
+  padding: 10px;
+  color: #2aa7ff;
+
+  border: 1px solid #2aa7ff;
+}
+.slot:hover {
+  color: white;
+  background-color: #2aa7ff;
+}
+.booking-popUp {
+  position: fixed;
+  width: 20vw;
+  background-color: #f8fbff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 3px 3px 3px #77829d;
+}
+.buttons-container {
+  display: flex;
+  gap: 20px;
+}
+.buttons-container button {
+  flex: 1 1 50%;
+}
+.hospitalBooking .btn.home-btns {
+  width: 16vw;
+}
+.bookingHeading-searchHospitals {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  width: 80vw;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.search-hospitals-container {
+  background-color: #fff;
+  position: relative;
+  top: 50px;
+  box-shadow: 2px 2px 2px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.search-hospitals {
+  display: flex;
+  flex: 1 1 50%;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  background: #fafbfe;
+  padding: 10px;
+  align-items: center;
+}
+.search-hospitals input {
+  width: 90%;
+}
+.bookedHospitals-ad {
+  width: 80vw;
+  display: flex;
+  gap: 30px;
+  margin: 5rem auto 0 auto;
+}
+.bookedHospitals-container {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bookedTime-date {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 20vw;
+}
+
+@media screen and (max-width: 1025px) {
+  #navbarNav * {
+    font-size: 10px;
+  }
+  .hero-div-text p:first-of-type {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .hero-div-text p:nth-of-type(2) {
+    font-size: 38px;
+    font-weight: 700;
+  }
+  .hero-div-text p:nth-of-type(3) {
+    font-size: 12px;
+  }
+  .hero-div-btn {
+    font-size: 12px;
+  }
+  .navbar-brand {
+    gap: 5px;
+  }
+  .hero-div-img img {
+    height: 300px;
+  }
+  .hero-div {
+    justify-content: center;
+    top: 0vh;
+  }
+  .quickAccessCards-search {
+    margin: 0 5vw;
+  }
+
+  .accessCards {
+    justify-content: center;
+  }
+
+  .cards {
+    aspect-ratio: 1/1;
+
+    font-size: 10px;
+    flex: 1 1 16%;
+  }
+  .search-icon {
+    font-size: 15px;
+  }
+  .search-bar {
+    padding: 5px;
+    font-size: 15px;
+    max-width: 150px;
+  }
+  .search-button {
+    max-width: 100px;
+  }
+  .search-button button {
+    padding: 5px;
+  }
+  .search-button span {
+    font-size: 15px;
+  }
+  .dot.active {
+    width: 15px;
+    height: 15px;
+  }
+  .inner-dot {
+    width: 5px;
+    height: 5px;
+  }
+  .specialization-cards {
+    height: 150px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .specialization-cards p {
+    font-size: 14px;
+  }
+  .row-1,
+  .row-2 {
+    gap: 30px;
+  }
+  .specialization-card-container {
+    gap: 30px;
+  }
+
+  .patientCaringImageDiv img {
+    width: 250px;
+    height: 200px;
+  }
+  .patientCaringImage_2 {
+    right: 100px;
+    bottom: 75px;
+  }
+  .latestNews-cards {
+    width: 200px;
+  }
+  .latestNews-cards img {
+    width: 200px;
+    height: 150px;
+  }
+  .latestNewsCardAuthor img {
+    object-fit: cover;
+    max-width: 20px;
+    height: auto;
+  }
+
+  .blueCurvedArrow {
+    top: 190px;
+  }
+  .phoneNumber-SMS {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .appStore img {
+    width: 100px;
+    height: 30px;
+  }
+  .community-container {
+    padding: 10vw 5vw;
+  }
+  .community-stats-card {
+    width: 150px;
+    height: 200px;
+  }
+  .community-stats-card .icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+  .community-stats-card h2 {
+    font-size: 30px;
+  }
+  .FAQImage {
+    align-self: center;
+  }
+  .FAQImage img {
+    width: 300px;
+    height: 300px;
+  }
+  .faq-accordion {
+    width: 30vw;
+  }
+  .accordion-header {
+    font-size: 20px;
+  }
+  .hospitalBooking .btn.home-btns {
+    font-size: 10px;
+    width: 20vw;
+  }
+  .search-bar-city-state,
+  .bookingHeading-searchHospitals {
+    width: 90vw;
+  }
+  .hospitalNumbers-hospitals-ad,
+  .bookedHospitals-ad {
+    width: 90vw;
+  }
+
+  .hospitals-container,
+  .bookedHospitals-container {
+    width: 70vw;
+  }
+
+  .slot {
+    font-size: 12px;
+  }
+  .date-details {
+    width: 180px;
+  }
+  .ad img {
+    width: 18vw;
+    height: 10vh;
+  }
+
+  .bookedTime-date {
+    flex-direction: column;
+    align-items: initial;
+    width: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  #navbarNav ul {
+    display: flex;
+    align-items: start;
+    margin-left: 1rem;
+  }
+  .hero-div {
+    flex-direction: column;
+  }
+  .hero-div-img img {
+    height: 250px;
+  }
+  .accessCards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards {
+    font-size: 15px;
+    width: 150px;
+  }
+  .search-div {
+    justify-content: center;
+  }
+  .search-icon {
+    font-size: 10px;
+  }
+  .search-bar {
+    padding: 5px;
+    font-size: 10px;
+    max-width: 90px;
+  }
+  .search-bar input {
+    width: 50%;
+  }
+  .search-button {
+    max-width: 90px;
+  }
+  .search-button button {
+    padding: 5px;
+  }
+  .search-button span {
+    font-size: 10px;
+  }
+  .slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 20vh 20px;
+  }
+  .slides {
+    transition: transform 0.5s ease-in-out;
+    justify-content: start;
+    display: flex;
+  }
+  .slide-img {
+    flex: 0 0 100%;
+    width: 300px;
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+  }
+  .slide-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: left;
+    display: block;
+  }
+  .dot.active {
+    width: 10px;
+    height: 10px;
+  }
+  .inner-dot {
+    width: 4px;
+    height: 4px;
+  }
+  .row-1,
+  .row-2 {
+    flex-direction: column;
+  }
+  .specialization-cards {
+    width: 150px;
+    aspect-ratio: 1/1;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .patientCaring-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 0;
+  }
+  .patientCaringImages {
+    width: 80%;
+  }
+  .patientCaringText {
+    width: 80%;
+  }
+  .patientCaringImageDiv img {
+    width: 200px;
+    height: 150px;
+  }
+  .patientCaringImage_2 {
+    right: 75px;
+    bottom: 50px;
+  }
+  li span {
+    margin-left: 5px;
+  }
+  .latestNewsCards-container {
+    display: flex;
+
+    justify-content: flex-start;
+
+    width: 950px;
+  }
+  .latestNews-cards {
+    width: 300px;
+    margin: 0 20px;
+  }
+  .latestNews-cards img {
+    width: 300px;
+  }
+  .cards-slider {
+    gap: 50px;
+  }
+  .AppPromotion-container {
+    flex-direction: column;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 5vw 0;
+  }
+  .AppPromotionText {
+    margin: 0 20vw;
+    width: 90%;
+  }
+  .blueCurvedArrow {
+    top: 170px;
+    right: 60px;
+  }
+  .appStore {
+    gap: 5px;
+  }
+  .phoneNumber {
+    width: 60vw;
+    overflow: hidden;
+  }
+
+  .community-container {
+    flex-direction: column;
+    padding: 20vw 5vw;
+  }
+  .community-text {
+    width: auto;
+    align-self: center;
+  }
+  .community-stats {
+    width: auto;
+    gap: 20px;
+    align-self: center;
+  }
+
+  .community-stats-card {
+    width: 150px;
+  }
+  .community-stats-card-container {
+    gap: 20px;
+  }
+  .FAQ-container {
+    flex-direction: column;
+  }
+  .faq-accordion {
+    width: 80%;
+  }
+  .FAQText {
+    margin: 0 10vw;
+  }
+  .FAQImage {
+    justify-content: center;
+  }
+  .accordion-item {
+    width: 80vw;
+  }
+  .accordion-icon {
+    font-size: 50px;
+  }
+  .boxes-container {
+    flex-direction: column;
+  }
+  .search-bar-city-state {
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 20px;
+  }
+  .search-state,
+  .search-city {
+    flex: 1 1 100%;
+  }
+  .hospitals-container,
+  .bookedHospitals-container {
+    width: 90vw;
+  }
+  .hospitals-ad,
+  .bookedHospitals-ad {
+    flex-direction: column;
+  }
+  .hospitalCentre-details,
+  .bookedHospital-details {
+    flex-direction: column;
+  }
+  .hospitalDetails-Image,
+  .bookedHospital-Image {
+    width: 80px;
+    height: 80px;
+  }
+  .hospitalDetails-Image img,
+  .bookedHospital-Image img {
+    height: 64px;
+  }
+  .hospitalDetails-Text,
+  .bookedHospital-Text {
+    width: 100%;
+  }
+  .hospitalBooking .btn.home-btns {
+    width: 40vw;
+  }
+  .slots-div {
+    margin-left: 0;
+  }
+  .slot-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .slot-times {
+    gap: 10px;
+  }
+  .date-details {
+    width: 220px;
+  }
+  .ad img {
+    width: 100%;
+    height: 200px;
+  }
+  .bookingHeading-searchHospitals {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bookedTime-date {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 370px) {
+  .cards-slider {
+    gap: 30px;
+  }
+  .latestNews-cards {
+    width: 250px;
+    margin: 0 20px;
+  }
+  .latestNews-cards img {
+    width: 250px;
+  }
+  .AppPromotionText {
+    align-self: flex-start;
+  }
+  .community-stats {
+    gap: 10px;
+  }
+
+  .community-stats-card {
+    width: 140px;
+  }
+  .community-stats-card-container {
+    gap: 10px;
+  }
+}
