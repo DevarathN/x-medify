@@ -260,8 +260,8 @@ const MedicalCentres = () => {
             <h1>
               {numberOfhospitals} medical centers available in{" "}
               {selectedCity
-                ? capitalizeFirst(selectedCity)
-                : capitalizeFirst(selectedState)}
+                ? selectedCity.toLowerCase()
+                : selectedState.toLowerCase()}
             </h1>
             <span>
               <IoCheckmarkCircleOutline className="checkIcon" />
