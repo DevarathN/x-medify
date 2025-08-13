@@ -203,7 +203,7 @@ const MedicalCentres = () => {
           }}
         ></div>
         <div className="search-bar-city-state">
-          <div className="search-state">
+          <div className="search-state" id="state">
             <CiLocationOn className="locationIcon" />
             <div
               className="state-dropdown dropdown-toggle"
@@ -232,7 +232,7 @@ const MedicalCentres = () => {
               )}
             </div>
           </div>
-          <div className="search-city">
+          <div className="search-city" id="city">
             <CiLocationOn className="locationIcon" />
             <div
               className="dropdown-toggle city-dropdown"
@@ -264,7 +264,7 @@ const MedicalCentres = () => {
             <button
               type="submit"
               className="btn home-btns"
-              onClick={getMedicalCentres}
+              onClick={()=>{getMedicalCentres()}}
               id="searchBtn"
             >
               <MdSearch style={{ fontSize: "20px" }} />
