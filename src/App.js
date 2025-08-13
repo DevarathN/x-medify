@@ -11,10 +11,10 @@ export default function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />}>
+          <Route path="/" element={<MedicalCentres />}>
             {" "}
           </Route>
-          <Route path="/medicalcentres" element={<MedicalCentres />}></Route>
+
           <Route path="/my-bookings" element={<MyBookings />}></Route>
         </Routes>
       </Router>

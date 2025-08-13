@@ -12,9 +12,7 @@ const LatestNews = () => {
     category: "Medical",
     author: "Rebecca Lee",
   }));
-  const slideActive = (index) => {
-    setCurrentSlide(index);
-  };
+
   const prevCard = () => {
     if (currentSlide > 0) {
       setCurrentSlide((prev) => prev - 1);

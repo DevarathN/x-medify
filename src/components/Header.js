@@ -15,12 +15,7 @@ const Header = () => {
       </div>
 
       <nav class="navbar navbar-expand-md navbar-light ">
-        <a
-          class="navbar-brand"
-          onClick={() => {
-            goToPage("/");
-          }}
-        >
+        <a class="navbar-brand">
           <GppGoodIcon
             style={{
               backgroundColor: "#2AA8FF",
@@ -53,7 +48,7 @@ const Header = () => {
                   location.pathname === `/medicalcentres` ? "active-link" : ""
                 }`}
                 onClick={() => {
-                  goToPage("/medicalcentres");
+                  goToPage("/");
                 }}
               >
                 Find Doctors

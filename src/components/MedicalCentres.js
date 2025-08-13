@@ -22,6 +22,8 @@ const MedicalCentres = () => {
   const [backgroundDull, setBackgroundDull] = useState(false);
   const [slotWidth, setSlotWidth] = useState(165);
   const [visibleDates, setVisibleDates] = useState(3);
+  const [stateOpen, setStateOpen] = useState(false);
+  const [cityopen, setCityOpen] = useState(false);
   const gap = 20;
   const slotIimings = [
     {
@@ -203,42 +205,60 @@ const MedicalCentres = () => {
         <div className="search-bar-city-state">
           <div className="search-state" id="state">
             <CiLocationOn className="locationIcon" />
-            <select
-              name="state"
-              value={selectedState || "State"}
-              onChange={(e) => {
-                setSelectedState(e.target.value);
+            <div
+              className="state-dropdown dropdown-toggle"
+              id="stateDropdown"
+              onClick={() => {
                 setSelectedCity(null);
                 setHasSearched(false);
+                setStateOpen((prev) => !prev);
+                setCityOpen(false);
               }}
             >
-              <option defaultValue="State" value="State">
-                State
-              </option>
-              {states.map((state, index) => (
-                <option key={index} value={state}>
-                  {state}
-                </option>
-              ))}
-            </select>
+              {selectedState || "State"}
+              {stateOpen && (
+                <ul>
+                  {states.map((state, index) => (
+                    <li
+                      key={index}
+                      onClick={() => {
+                        setSelectedState(state);
+                      }}
+                    >
+                      {state}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </div>
           <div className="search-city" id="city">
             <CiLocationOn className="locationIcon" />
-            <select
-              name="city"
-              value={selectedCity || "City"}
-              onChange={(e) => {
-                setSelectedCity(e.target.value);
+            <div
+              className="dropdown-toggle city-dropdown"
+              id="cityDropdown"
+              onClick={() => {
                 setHasSearched(false);
+                setCityOpen((prev) => !prev);
+                setStateOpen(false);
               }}
             >
-              <option defaultValue="City" value="City">
-                City
-              </option>
-              {cities.map((city, index) => (
-                <option value={city}>{city}</option>
-              ))}
-            </select>
+              {selectedCity || "City"}
+              {cityopen && (
+                <ul>
+                  {cities.map((city, index) => (
+                    <li
+                      key={index}
+                      onClick={() => {
+                        setSelectedCity(city);
+                      }}
+                    >
+                      {city}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </div>
           <div className="search-button">
             <button
@@ -257,9 +277,7 @@ const MedicalCentres = () => {
             {" "}
             <h1>
               {numberOfhospitals} medical centers available in{" "}
-              {selectedCity
-                ? capitalizeFirst(selectedCity)
-                : capitalizeFirst(selectedState)}
+              {selectedCity ? selectedCity : selectedState}
             </h1>
             <span>
               <IoCheckmarkCircleOutline className="checkIcon" />

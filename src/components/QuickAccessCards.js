@@ -3,7 +3,7 @@ import { FaUserDoctor } from "react-icons/fa6";
 import { ImLab } from "react-icons/im";
 import { FaHospital, FaAmbulance } from "react-icons/fa";
 import { BsCapsule } from "react-icons/bs";
-import { MdSearch } from "react-icons/md";
+
 const QuickAccessCards = () => {
   return (
     <div className="quickAccessCards-search">

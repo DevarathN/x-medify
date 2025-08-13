@@ -770,8 +770,7 @@ li {
   display: flex;
   gap: 20px;
   background-color: #fff;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   bottom: 50px;
   width: 80vw;
@@ -785,7 +784,7 @@ li {
   padding: 10px;
   gap: 20px;
   flex: 1 1 25%;
-  align-items: center;
+
   background-color: #fafbfe;
 
   border: 1px solid #f0f0f0;
