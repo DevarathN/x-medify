@@ -277,7 +277,7 @@ const MedicalCentres = () => {
             {" "}
             <h1>
               {numberOfhospitals} medical centers available in{" "}
-              {selectedCity ? selectedCity : selectedState}
+              {selectedCity ? selectedCity.toLowerCase() : selectedState.toLowerCase()}
             </h1>
             <span>
               <IoCheckmarkCircleOutline className="checkIcon" />
